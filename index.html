@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<title>Matías Luis Larenti - CV Master 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+"primary": "#1f8093",   // Teal - Color principal
+"secondary": "#142850", // Navy - Color secundario
+"accent": "#C29B30",    // Gold - Detalles
+},
+fontFamily: {
+"sans": ["Manrope", "sans-serif"]
+}
+}
+}
+}
+</script>
+<style>
+/* Optimizaciones críticas para PDF */
+@media print {
+* {
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+color-adjust: exact !important;
+}
+body {
+background: white !important;
+margin: 0 !important;
+padding: 0 !important;
+}
+.a4-page {
+box-shadow: none !important;
+margin: 0 !important;
+width: 210mm !important;
+height: 297mm !important;
+overflow: visible !important;
+page-break-after: avoid;
+}
+.material-symbols-outlined, .fa-brands {
+display: inline-block !important;
+vertical-align: middle !important;
+}
+header {
+background-color: #142850 !important;
+}
+}
+@page {
+size: A4;
+margin: 0;
+}
+body {
+background-color: #52525b;
+display: flex;
+justify-content: center;
+padding: 10px 0;
+margin: 0;
+font-size: 91%;
+}
+.a4-page {
+width: 210mm;
+height: 297mm;
+background: white;
+position: relative;
+display: flex;
+flex-direction: column;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+overflow: hidden;
+}
+.sidebar {
+width: 32%;
+background-color: #f8fafc;
+border-right: 1px solid #e2e8f0;
+font-size: 91%;
+}
+.main-content {
+width: 68%;
+font-size: 91%;
+}
+.skill-tag {
+font-size: 8.5px;
+font-weight: 700;
+padding: 2px 5px;
+background: white;
+border: 1px solid #cbd5e1;
+border-radius: 4px;
+color: #475569;
+display: inline-block;
+margin-bottom: 2px;
+}
+.timeline-line {
+position: absolute;
+left: 7px;
+top: 10px;
+bottom: 0;
+width: 2px;
+background: #f1f5f9;
+}
+.timeline-dot {
+position: absolute;
+left: 0;
+top: 6px;
+width: 14px;
+height: 14px;
+background: white;
+border: 3px solid #1f8093;
+border-radius: 50%;
+z-index: 10;
+}
+.ats-highlight {
+background-color: #fffbea;
+padding: 1px 3px;
+border-radius: 2px;
+font-weight: bold;
+}
+</style>
+</head>
+<body class="font-sans antialiased text-slate-800">
+<div class="a4-page">
+<header
+class="bg-secondary text-white px-8 py-4 flex justify-between items-center relative overflow-hidden shrink-0">
+<div class="absolute -top-16 -right-16 w-48 h-48 bg-white/10 rounded-full z-0"></div>
+<div class="relative z-10 flex items-center gap-5 max-w-[65%]">
+<div class="relative shrink-0">
+<img src="foto_perfil.jpg" alt="Matías Luis Larenti"
+class="w-16 h-16 rounded-full border-3 border-primary object-cover shadow-xl bg-slate-400">
+</div>
+<div>
+<h1 class="text-2xl font-extrabold tracking-tight leading-none uppercase">
+Matías Luis <span class="text-primary">Larenti</span>
+</h1>
+<p
+class="text-[10px] font-bold tracking-[0.2em] text-accent mt-1.5 uppercase italic border-l-2 border-primary/50 pl-2 leading-tight">
+<span class="ats-highlight">Soporte Coordinador de IT</span> | Senior IT Infrastructure Specialist & AI Solutions Architect
+</p>
+</div>
+</div>
+<div class="relative z-10 text-right text-[9px] space-y-1 font-medium border-l border-white/20 pl-5">
+<div class="flex items-center justify-end gap-2">
+<span>matias.larenti@gmail.com</span>
+<span class="material-symbols-outlined text-[14px] text-primary">mail</span>
+</div>
+<div class="flex items-center justify-end gap-2">
+<span>+54 9 341 5916800</span>
+<span class="material-symbols-outlined text-[14px] text-accent">call</span>
+</div>
+<div class="flex items-center justify-end gap-2">
+<span>Rosario, Santa Fe, Argentina</span>
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span>
+</div>
+<div class="flex items-center justify-end gap-2">
+<span>Movilidad propia | Guardias 24/7 | Disponibilidad para viajes</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">directions_car</span>
+</div>
+<div class="flex items-center justify-end gap-2 text-primary font-bold">
+<span>linkedin.com/in/matias-larenti</span>
+<i class="fa-brands fa-linkedin text-[13px]"></i>
+</div>
+<div class="flex items-center justify-end gap-2 text-white/80">
+<span>github.com/matias-larenti</span> <i class="fa-brands fa-github text-[13px]"></i>
+</div>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden">
+<aside class="sidebar p-4 flex flex-col gap-4">
+<section>
+<h3
+class="text-secondary font-black text-[10px] uppercase tracking-widest border-b-2 border-primary/30 pb-0.5 mb-2">
+Summary
+</h3>
+<p class="text-[9px] leading-relaxed text-slate-600 text-justify">
+<span class="ats-highlight">Soporte Coordinador de IT</span> con <b>+20 años de experiencia</b> gestionando infraestructuras críticas. Experto en liderazgo técnico, <span class="ats-highlight">comunicación asertiva</span> con stakeholders y <span class="ats-highlight">resolución de incidentes</span> complejos. Mi core es la solidez en <b>Redes y Servidores</b>, potenciada por modernización mediante <b>Automatización, Monitoreo Avanzado e IA Generativa</b>. Gestión bajo normas <b>ISO 27001</b>, arquitectura <b>Zero Trust</b> y <span class="ats-highlight">capacidad de coordinación</span> de equipos multidisciplinarios. Disponibilidad para guardias 24/7, viajes y movilidad propia.
+</p>
+</section>
+<section class="space-y-3">
+<h3
+class="text-secondary font-black text-[10px] uppercase tracking-widest border-b-2 border-primary/30 pb-0.5 mb-2">
+Technical Stack</h3>
+<div>
+<h4 class="text-[8px] font-bold text-primary uppercase mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span> IA & Automation
+</h4>
+<div class="flex flex-wrap gap-1">
+<span class="skill-tag border-primary/30 bg-primary/5 text-primary">Google AI (Gemini/Vertex)</span>
+<span class="skill-tag">n8n Workflows</span>
+<span class="skill-tag">RAG Architectures</span>
+<span class="skill-tag">Machine Learning</span>
+<span class="skill-tag">Python (Pandas)</span>
+<span class="skill-tag">Evolution API</span>
+<span class="skill-tag">IA Edge Analytics</span>
+</div>
+</div>
+<div>
+<h4 class="text-[8px] font-bold text-secondary uppercase mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cloud_circle</span> Infra & Cloud
+</h4>
+<div class="flex flex-wrap gap-1">
+<span class="skill-tag border-l-2 border-l-primary">Linux & Windows Srv</span>
+<span class="skill-tag">Proxmox VE</span>
+<span class="skill-tag">Docker Swarm + Dokploy</span>
+<span class="skill-tag">Azure Intune</span>
+<span class="skill-tag">VMware / Citrix</span>
+<span class="skill-tag">SQL Server</span>
+<span class="skill-tag">Fortinet</span>
+</div>
+</div>
+<div>
+<h4 class="text-[8px] font-bold text-secondary uppercase mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hub</span> Networking & Security
+</h4>
+<div class="flex flex-wrap gap-1">
+<span class="skill-tag border-l-2 border-l-primary">Cisco CCNA</span>
+<span class="skill-tag">MikroTik</span>
+<span class="skill-tag">Palo Alto FW</span>
+<span class="skill-tag">Zero Trust Architecture</span>
+<span class="skill-tag">Ubiquiti WiFi Enterprise</span>
+<span class="skill-tag">Telefonia IP (Avaya)</span>
+</div>
+</div>
+<div>
+<h4 class="text-[8px] font-bold text-secondary uppercase mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">monitoring</span> Monitoreo & Observabilidad
+</h4>
+<div class="flex flex-wrap gap-1">
+<span class="skill-tag border-l-2 border-l-primary">Grafana Stack</span>
+<span class="skill-tag">Prometheus + Loki</span>
+<span class="skill-tag">Zabbix</span>
+<span class="skill-tag">SolarWinds</span>
+<span class="skill-tag">PRTG</span>
+<span class="skill-tag">Azure Sentinel</span>
+</div>
+</div>
+</section>
+<section>
+<h3
+class="text-secondary font-black text-[10px] uppercase tracking-widest border-b-2 border-primary/30 pb-0.5 mb-2">
+Certificaciones Clave</h3>
+<ul class="space-y-1.5">
+<li class="leading-tight">
+<span class="block text-[9px] font-bold text-slate-700">AZ-900: Azure Fundamentals</span>
+<span class="text-[8px] text-slate-500 italic">Microsoft Certified (2024)</span>
+</li>
+<li class="leading-tight">
+<span class="block text-[9px] font-bold text-slate-700">PL-900: Power Platform Fundamentals</span>
+<span class="text-[8px] text-slate-500 italic">Microsoft Certified (2024)</span>
+</li>
+<li class="leading-tight">
+<span class="block text-[9px] font-bold text-slate-700">Power BI - Advanced Analytics</span>
+<span class="text-[8px] text-slate-500 italic">DataCamp (2023)</span>
+</li>
+<li class="leading-tight">
+<span class="block text-[9px] font-bold text-slate-700">ISO/IEC 27001:2022 Implementation</span>
+<span class="text-[8px] text-slate-500 italic">IVAC International</span>
+</li>
+<li class="leading-tight">
+<span class="block text-[9px] font-bold text-primary font-black italic">Expert in AI & RAG Orchestration</span>
+<span class="text-[8px] text-slate-500">Formación Especializada 2024-2025</span>
+</li>
+</ul>
+</section>
+<section class="mt-auto pb-5">
+<h3
+class="text-secondary font-black text-[10px] uppercase tracking-widest border-b-2 border-primary/30 pb-0.5 mb-2">
+Education
+</h3>
+<div class="space-y-2">
+<div class="border-l-2 border-primary pl-2">
+<p class="text-[9px] font-bold text-secondary">Analista de Sistemas</p>
+<p class="text-[8px] text-slate-500 italic">Inst. Terciario Urquiza (2006-2008)</p>
+</div>
+</div>
+</section>
+</aside>
+<main class="main-content p-5 flex flex-col">
+<section class="flex-1">
+<div class="flex items-center gap-2 mb-5 border-b border-slate-100 pb-1.5">
+<span class="material-symbols-outlined text-primary text-xl">work_history</span>
+<h2 class="text-secondary text-[11px] font-black uppercase tracking-[0.2em]">Professional Experience
+</h2>
+</div>
+<div class="space-y-5">
+<div class="relative pl-7">
+<div class="timeline-line"></div>
+<div class="timeline-dot"></div>
+<div class="flex justify-between items-start mb-1">
+<div>
+<h3 class="text-[11.5px] font-extrabold text-secondary uppercase">Consultor Senior Infraestructura & Automatización</h3>
+<p class="text-[9px] font-bold text-primary">TELEPAGOS (Fintech) | Sep 2025 — Presente</p>
+</div>
+</div>
+<ul class="text-[9.5px] text-slate-600 list-disc pl-3 space-y-1 text-justify">
+<li><b>Arquitectura Integral de Monitoreo:</b> Diseño e implementación del stack completo <b>Grafana, Loki, Prometheus y Promtail</b> con integración de IA edge para análisis predictivo de alertas y generación automática de informes, <span class="ats-highlight">reduciendo tiempo de diagnóstico en un 65%</span>.</li>
+<li><b>Modernización de Infraestructura:</b> Migración y arquitectura de servidores sobre <b>Proxmox VE</b> con orquestación <b>Docker Swarm + Dokploy</b> para despliegues continuos y <span class="ats-highlight">alta disponibilidad (99.9%)</span>, <span class="ats-highlight">optimizando recursos en un 30%</span>.</li>
+<li><b>Automatización con IA:</b> Diseño de pipelines y RAG utilizando <b>n8n y Evolution API</b> para automatizar procesos de cobranzas y atención, <span class="ats-highlight">reduciendo carga operativa en un 40%</span>.</li>
+<li><b>Seguridad Perimetral:</b> Implementación de políticas de firewall y segmentación de redes bajo principios <b>Zero Trust</b> para cumplimiento financiero con <span class="ats-highlight">liderazgo de coordinación</span> de equipos técnicos.</li>
+</ul>
+</div>
+<div class="relative pl-7">
+<div class="timeline-line"></div>
+<div class="timeline-dot" style="border-color: #142850;"></div>
+<div class="flex justify-between items-start mb-1">
+<div>
+<h3 class="text-[11.5px] font-extrabold text-secondary uppercase">IT Experienced / Business Support Senior</h3>
+<p class="text-[9px] font-bold text-primary">NEORIS (Global IT Services) | Sep 2017 — Sep 2024</p>
+</div>
+<span class="text-[8px] font-bold text-slate-400">7 Años</span>
+</div>
+<ul class="text-[9.5px] text-slate-600 list-disc pl-3 space-y-1 text-justify">
+<li><b>Liderazgo en Proyectos de Análisis de Datos:</b> Diseño, desarrollo e implementación de un dashboard de Asistencia a Oficinas Global utilizando logs de <b>Azure Sentinel</b>, proporcionando una visión estratégica de la ocupación de oficinas a nivel mundial para la toma de decisiones, <span class="ats-highlight">gestionando comunicaciones con C-Level</span>.</li>
+<li><b>Sistema Integral de Control de Equipos:</b> Creación de plataforma de gestión de activos mediante integración de datos de múltiples fuentes (<b>Intune, Defender, IMS, Dell Support, Absolute, RRHH</b>), <span class="ats-highlight">optimizando la gestión de +1000 equipos</span> y garantizando correcta entrega y estado con <span class="ats-highlight">coordinación de equipos de soporte</span>.</li>
+<li><b>Sistema de Análisis de Vulnerabilidades:</b> Desarrollo y gestión de plataforma compuesta por dos tableros interconectados con <b>Microsoft Defender</b> para seguimiento diario y generación de informes estadísticos mensuales sobre vulnerabilidades de infraestructura, <span class="ats-highlight">mejorando tiempos de respuesta en un 35%</span>.</li>
+<li><b>Infraestructura Crítica:</b> Migración de monitoreo de <b>PRTG a SolarWinds</b>, administración de firewalls <b>Palo Alto</b> con políticas <b>ISO 27001</b>, y gestión de telefonía IP (<b>Avaya/FreePBX</b>) para soporte regional con <span class="ats-highlight">resolución de incidentes críticos</span>.</li>
+</ul>
+</div>
+<div class="relative pl-7">
+<div class="timeline-line"></div>
+<div class="timeline-dot" style="border-color: #C29B30;"></div>
+<div class="flex justify-between items-start mb-1">
+<div>
+<h3 class="text-[11.5px] font-extrabold text-secondary uppercase">Consultor Técnico IT (Freelance)</h3>
+<p class="text-[9px] font-bold text-primary">CONVERGENCIA DIGITAL (Buenos Aires) | Feb 2015 — Sep 2017</p>
+</div>
+<span class="text-[8px] font-bold text-slate-400">2.5 Años</span>
+</div>
+<ul class="text-[9px] text-slate-600 grid grid-cols-1 gap-y-1 pl-3 list-disc">
+<li><b>Responsable Técnico Corporativo:</b> <span class="ats-highlight">Liderazgo de coordinación</span> técnico en proyectos de infraestructura para clientes de gran envergadura como <b>Musimundo y Banco Hipotecario</b>, ejecutando cableado estructurado, redes WiFi (<b>Ubiquiti Enterprise</b>) e integración de sistemas con <span class="ats-highlight">comunicación asertiva</span> con stakeholders.</li>
+<li><b>Soporte Especializado Nivel 3:</b> <span class="ats-highlight">Resolución de incidentes</span> complejos para empresas como <b>QBE Seguros</b>, implementando soluciones de continuidad de negocio con <span class="ats-highlight">capacidad de coordinación</span> de proveedores externos.</li>
+</ul>
+<div class="mt-1.5 pl-3">
+<p class="text-[8px] text-slate-500 italic mt-1">
+<b>CROMA Imprenta (2008-2012):</b> Emprendimiento personal paralelo de diseño gráfico y gestión técnica integral.
+</p>
+</div>
+</div>
+<div class="relative pl-7">
+<div class="timeline-line"></div>
+<div class="timeline-dot" style="border-color: #94a3b8; width: 10px; height: 10px; left: 2px;"></div>
+<div class="flex justify-between items-start mb-1 opacity-80">
+<div>
+<h3 class="text-[10px] font-bold text-slate-600 uppercase">Trayectoria Temprana</h3>
+<p class="text-[8px] text-slate-500 italic">2003 — 2008</p>
+</div>
+</div>
+<p class="text-[8px] text-slate-500 italic pl-3 leading-relaxed">
+<b>L&M Informática:</b> Mantenimiento de hardware, redes básicas y logística de equipos. Soporte técnico para particulares y empresas varias. Base sólida en soporte técnico nivel 1/2 con <span class="ats-highlight">capacidad de comunicación</span> con usuarios finales.
+</p>
+</div>
+</div>
+</section>
+<section class="mt-5">
+<div class="bg-slate-50 border border-slate-200 rounded-lg p-4 shadow-sm">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-accent text-lg">verified</span>
+<h3 class="text-secondary text-[10px] font-black uppercase tracking-widest">Core Competencies</h3>
+</div>
+<div class="grid grid-cols-2 gap-x-5 gap-y-3">
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary text-base">insights</span>
+<div>
+<h4 class="text-[8px] font-bold text-secondary uppercase leading-none mb-0.5">Business Intelligence</h4>
+<p class="text-[8px] text-slate-500 leading-tight">Transformo datos técnicos en insights estratégicos con Power BI y Grafana.</p>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary text-base">groups</span>
+<div>
+<h4 class="text-[8px] font-bold text-secondary uppercase leading-none mb-0.5">Liderazgo & Mentoría</h4>
+<p class="text-[8px] text-slate-500 leading-tight">Formación de equipos técnicos y gestión efectiva de stakeholders.</p>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary text-base">security</span>
+<div>
+<h4 class="text-[8px] font-bold text-secondary uppercase leading-none mb-0.5">Zero Trust Security</h4>
+<p class="text-[8px] text-slate-500 leading-tight">Arquitectura de seguridad proactiva con segmentación y monitoreo continuo.</p>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary text-base">lightning</span>
+<div>
+<h4 class="text-[8px] font-bold text-secondary uppercase leading-none mb-0.5">Automatización & IA</h4>
+<p class="text-[8px] text-slate-500 leading-tight">Aceleración de procesos con workflows de IA y orquestación de sistemas.</p>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary text-base">handshake</span>
+<div>
+<h4 class="text-[8px] font-bold text-secondary uppercase leading-none mb-0.5">Comunicación Asertiva</h4>
+<p class="text-[8px] text-slate-500 leading-tight">Capacidad para interactuar eficazmente con equipos y niveles directivos.</p>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary text-base">emergency</span>
+<div>
+<h4 class="text-[8px] font-bold text-secondary uppercase leading-none mb-0.5">Resolución de Incidentes</h4>
+<p class="text-[8px] text-slate-500 leading-tight">Diagnóstico rápido y solución efectiva bajo presión 24/7.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer
+class="bg-secondary text-white/40 text-[7px] py-2 text-center uppercase tracking-[0.4em] font-bold shrink-0">
+Matías Luis Larenti • Senior IT Infrastructure & AI Architect • 2026
+</footer>
+</div>
+</body>
+</html>
